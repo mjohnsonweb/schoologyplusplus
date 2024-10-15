@@ -1,1 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Schoology Plus Lite</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Schoology Plus Lite</h1>
+    </div>
 
+    <div class="theme-section">
+        <h2>Theme Customization</h2>
+        <label for="themeColor">Choose a theme color: </label>
+        <input type="color" id="themeColor" value="#3b5998">
+        <button id="applyTheme">Apply Theme</button>
+        <label>
+            <input type="checkbox" id="darkModeToggle"> Enable Dark Mode
+        </label>
+    </div>
+
+    <div class="task-list">
+        <h2>Task List</h2>
+        <input type="text" id="newTask" placeholder="Enter new task...">
+        <button id="addTask">Add Task</button>
+        <ul id="taskContainer"></ul>
+    </div>
+
+    <div class="grade-preview">
+        <h2>Grade Preview</h2>
+        <input type="text" id="courseName" placeholder="Course Name">
+        <input type="number" id="courseGrade" placeholder="Grade (%)">
+        <button id="addGrade">Add Grade</button>
+        <ul id="gradeContainer"></ul>
+        <div id="averageGradeContainer"></div>
+    </div>
+
+    <div class="settings">
+        <button id="resetSettings">Reset All Settings</button>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
